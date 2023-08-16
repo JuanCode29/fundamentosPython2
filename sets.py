@@ -30,3 +30,20 @@ for city in mycity:
     else:
         continue
         print(f"La ciudad de {city} No esta en la lista")
+
+#AGREGAR ELEMENTOS AL CONJUNTO:
+#1. método .add(elemento)
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity.add("Yurimaguas")
+print(mycity)
+
+#2. método update(): Permite agregar elementos de un conjunto a otro o tambien puede ser cualquier objeto iterable (tuplas, listas, diccionarios, etc.)..
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas"}
+mycity.update(mycity2)
+print(mycity)
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mylist = ["Tocache", "Lamas"]
+mycity.update(mylist)
+print(mycity)
