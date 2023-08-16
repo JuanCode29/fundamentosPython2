@@ -117,3 +117,30 @@ mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
 mycity_diferente = mycity.symmetric_difference(mycity2)
 print(mycity_diferente)
+
+#COPIAR CONJUNTO:
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+copy_city = mycity.copy()
+print(copy_city)
+
+#DIFERENCIA DE CONJUNTOS:
+#Método .difference(): Devuelve un conjunto que contiene los elementos que solo existen en el conjunto x y no en el conjunto y:
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.difference(y)
+
+print(z)
+
+#Método .difference_update():Eliminar los elementos que existen en ambos conjuntos.
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.difference_update(y)
+print(x)
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+y.difference_update(x)
+print(y)
