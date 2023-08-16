@@ -76,3 +76,32 @@ print(mycity)
 mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 del mycity
 print(mycity)#Resultado ERROR porque el conjunto ya no existe.
+
+# UNION DE CONJUNTOS
+#1. Método .union():  devuelve un nuevo conjunto con todos los elementos de ambos conjuntos:
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas"}
+union_city = mycity.union(mycity2)
+print(union_city)
+
+#2. El método update() inserta los elementos en mycity2 en mycity:
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas"}
+mycity.update(mycity2)
+print(mycity)
+
+#INTERSECCION DE CONJUNTOS:
+#Método intersection_update(): Mantiene solo los elementos que están presentes en ambos conjuntos
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
+mycity.intersection_update(mycity2)
+print(mycity)
+
+#Método intersection(): devolverá un nuevo conjunto, que solo contiene los elementos que están presentes en ambos conjuntos.
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
+interseccion = mycity.intersection(mycity2)
+print(interseccion)
