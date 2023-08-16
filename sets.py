@@ -10,7 +10,7 @@ myset = {1, 2, 3, 4, True}
 print(myset)
 
 #No permite duplicados:
-myset = {1,2,3,4,1,2}
+myset = {1, 2, 3, 4, 1, 2}
 print(myset)
 
 #LONGITUD DE UN CONJUNTO
@@ -22,3 +22,11 @@ print(numero_elementos)
 myset = {1, 2, 3, 4}
 for element in myset:
     print(element)
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+for city in mycity:
+    if city == "Rioja":
+        print(f"La ciudad de {city} si esta en la lista")
+    else:
+        continue
+        print(f"La ciudad de {city} No esta en la lista")
