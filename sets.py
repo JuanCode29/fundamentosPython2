@@ -105,3 +105,15 @@ mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
 interseccion = mycity.intersection(mycity2)
 print(interseccion)
+
+#CONSERVAR TODO MENOS LOS DUPLICADOS
+#1.El método symmetric_difference_update() mantendrá solo los elementos que NO están presentes en ambos conjuntos.
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
+mycity.symmetric_difference_update(mycity2)
+print(mycity)
+#2. El método symmetric_difference() devolverá un nuevo conjunto, que contiene solo los elementos que NO están presentes en ambos conjuntos.
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
+mycity_diferente = mycity.symmetric_difference(mycity2)
+print(mycity_diferente)
