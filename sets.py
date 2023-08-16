@@ -17,3 +17,8 @@ print(myset)
 myset = {1,2,3,4,1,2}
 numero_elementos = len(myset)#NO CONSIDERA A LOS DUPLICADOS
 print(numero_elementos)
+
+#RECORRIDO DE  LOS LEMENTOS DE UN CONJUNTO
+myset = {1, 2, 3, 4}
+for element in myset:
+    print(element)
