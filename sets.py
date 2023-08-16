@@ -144,3 +144,29 @@ y = {"google", "microsoft", "apple"}
 
 y.difference_update(x)
 print(y)
+
+#OTROS MÉTODOS:
+#1. isdisjoint():Devuelve True si no hay elementos en el conjunto x presentes en el conjunto y. Lo contrario devuelve False.
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "facebook"}
+
+z = x.isdisjoint(y)
+
+print(z)
+
+#2. Set issubset():Devuelve True si todos los elementos del conjunto x están presentes en el conjunto y:
+
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
+
+z = x.issubset(y)
+
+print(z)
+
+#3.Método issuperset(): devuelve True si todos los elementos del conjunto especificado existen en el conjunto original; de lo contrario, devuelve False.
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"a", "b", "c"}
+
+z = x.issuperset(y)
+
+print(z)
