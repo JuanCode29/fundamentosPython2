@@ -65,3 +65,14 @@ mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 elemento_eliminado = mycity.pop()
 print(elemento_eliminado)
 print(mycity)
+
+#VACIAR Y ELIMINAR  CONJUNTO:
+#1. Vaciar conjunto:
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity.clear()
+print(mycity)
+
+#2. Eliminar conjunto
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+del mycity
+print(mycity)#Resultado ERROR porque el conjunto ya no existe.
