@@ -47,3 +47,14 @@ mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 mylist = ["Tocache", "Lamas"]
 mycity.update(mylist)
 print(mycity)
+
+#ELIMINAR ELEMENTOS DE UN CONJUNTO:
+#Para eliminar un elemento de un conjunto, utilice el método remove()o el discard().
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity.remove("Tarapoto")#Si el elemento a eliminar NO EXISTE, se genera un ERROR
+print(mycity)
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity.discard("Tarapoto")#Si el elemento a eliminar NO EXISTE, NO genera ERROR
+print(mycity)
