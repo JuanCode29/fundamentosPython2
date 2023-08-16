@@ -5,6 +5,9 @@ print(myset)
 myset =set((1, 2, 3, 4))#Otra forma de crear conjuntos
 print(type(myset))
 
+myset = set("HOLA")#cREAMOS UN CONJUNTO A PARTIR DE UNA CADENA
+print(myset)
+
 #el 1 y True se consideran un mismo valor
 myset = {1, 2, 3, 4, True}
 print(myset)
