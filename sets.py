@@ -58,3 +58,10 @@ print(mycity)
 mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 mycity.discard("Tarapoto")#Si el elemento a eliminar NO EXISTE, NO genera ERROR
 print(mycity)
+
+#Método .pop(): Este método elimina cualquier elemento de manera aleatoria y su valor de retorno es el elemento eliminado
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+elemento_eliminado = mycity.pop()
+print(elemento_eliminado)
+print(mycity)
