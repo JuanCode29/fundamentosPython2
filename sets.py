@@ -94,20 +94,34 @@ mycity2 = {"Tocache", "Lamas"}
 mycity.update(mycity2)
 print(mycity)
 
+#3. Usando "|"
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas"}
+
+print(mycity | mycity2)
+
 #INTERSECCION DE CONJUNTOS:
-#Método intersection_update(): Mantiene solo los elementos que están presentes en ambos conjuntos
+#1. Método intersection_update(): Mantiene solo los elementos que están presentes en ambos conjuntos
 
 mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
 mycity.intersection_update(mycity2)
 print(mycity)
 
-#Método intersection(): devolverá un nuevo conjunto, que solo contiene los elementos que están presentes en ambos conjuntos.
+#2. Método intersection(): devolverá un nuevo conjunto, que solo contiene los elementos que están presentes en ambos conjuntos.
 
 mycity = {"Rioja", "Moyobamba", "Tarapoto"}
 mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
 interseccion = mycity.intersection(mycity2)
 print(interseccion)
+
+# Usando "&"
+
+mycity = {"Rioja", "Moyobamba", "Tarapoto"}
+mycity2 = {"Tocache", "Lamas", "Rioja", "Tarapoto"}
+
+print(mycity & mycity2)
 
 #CONSERVAR TODO MENOS LOS DUPLICADOS
 #1.El método symmetric_difference_update() mantendrá solo los elementos que NO están presentes en ambos conjuntos.
