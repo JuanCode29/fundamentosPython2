@@ -141,7 +141,7 @@ copy_city = mycity.copy()
 print(copy_city)
 
 #DIFERENCIA DE CONJUNTOS:
-#Método .difference(): Devuelve un conjunto que contiene los elementos que solo existen en el conjunto x y no en el conjunto y:
+#1. Método .difference(): Devuelve un conjunto que contiene los elementos que solo existen en el conjunto x y no en el conjunto y:
 x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}
 
@@ -149,7 +149,7 @@ z = x.difference(y)
 
 print(z)
 
-#Método .difference_update():Eliminar los elementos que existen en ambos conjuntos.
+#2. Método .difference_update():Eliminar los elementos que existen en ambos conjuntos.
 x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}
 
@@ -161,6 +161,13 @@ y = {"google", "microsoft", "apple"}
 
 y.difference_update(x)
 print(y)
+
+#3. Usando "-"
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+print(x -y )
 
 #OTROS MÉTODOS:
 #1. isdisjoint():Devuelve True si no hay elementos en el conjunto x presentes en el conjunto y. Lo contrario devuelve False.
