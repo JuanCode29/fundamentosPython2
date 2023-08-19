@@ -94,3 +94,31 @@ def factorial_num(n):
 
 resultado = factorial_num(5)
 print("Factorial:", resultado)
+
+#RETORNAR MÚLTIPLES VALORES
+
+def obtener_datos_personales():
+    Nombre = 'Juan'
+    Edad = 30
+    Ciudad = 'Cajamarca'
+    return Nombre, Edad, Ciudad
+
+Nombre, Edad, Ciudad = obtener_datos_personales()
+print(Nombre)
+print(Edad)
+print(Ciudad)
+
+
+def obtener_datos_personales():
+    datos = {
+        'Nombre': "Juan",
+        'Edad': 30,
+        'Ciudad': 'Cajamarca'
+    }
+    return datos
+
+datos_personales = obtener_datos_personales()
+
+print(datos_personales["Nombre"])
+print(datos_personales['Edad'])
+print(datos_personales['Ciudad'])
