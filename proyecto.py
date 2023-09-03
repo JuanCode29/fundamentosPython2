@@ -28,28 +28,43 @@ def obtener_ganador(usuario, computador):
 def main():
     puntos_usuario = 0
     puntos_computador = 0
+    rondas = 0
     while True:
         #obtenemos las opcion del usuario y computador
+        rondas += 1
+        print('='*20)
+        print(f'<<<<<  RODA {rondas} >>>>>')
         usuario = obtener_opcion_usuario()
         computador = obtener_opcion_computador()
 
-        print(f'Tú lejiste {usuario}. La computadora eligió {computador}.')
+        print(f'Tú lejiste: {usuario}.\nLa computadora eligió: {computador}.')
 
         resultado = obtener_ganador(usuario, computador)
+
         if resultado == 'Usuario':
             puntos_usuario += 1
-            print('¡Ganaste esta ronda!')
-        elif resultado == 'computador':
+            print('\n¡Ganaste esta ronda!')
+        elif resultado == 'Computador':
             puntos_computador +=1
-            print('La Computadora ganó esta ronda')
+            print('\nLa Computadora ganó esta ronda')
         else:
-            print('Esta ronda es un empate.')
+            print('\nEsta ronda es un empate.')
 
         if puntos_usuario >= 3:
-            print("¡Felicidades! Ganaste el juego")
+            print("\n¡Felicidades! Ganaste el juego")
             break
         if puntos_computador >= 3:
-            print("La computadora a ganado el juego")
+            print("\nLa computadora a ganado el juego")
             break
+
 main()
+
+#REINICIAMOS EL JUEGO
+
+while True:
+    print("\n ====================")
+    respuesta = input("¿Quieres jugar de nuevo? (s/n): ")
+    if respuesta.strip().lower() != 's':
+        break
+    main()
 
