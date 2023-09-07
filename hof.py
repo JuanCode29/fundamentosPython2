@@ -10,3 +10,15 @@ def cuadrado(x):
 
 resultado = aplicar_funcion(cuadrado, lista_numeros)
 print(resultado)
+
+#2.- FUNCIONES QUE DEVUELVEN FUNCIONES
+
+def crear_funcion_multiplicadora(factor):
+    def multiplicar(x):
+        return x * factor
+    return multiplicar
+
+duplicar = crear_funcion_multiplicadora(2)
+
+resultado = duplicar(5)
+print(resultado)
