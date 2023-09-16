@@ -22,5 +22,5 @@ print(resultado)
 #Módulo collectios: 
 import collections
 lista = [1, 2, 3, 1, 2, 4, 5, 4]
-counter = collections.Counter(lista) #Un diccionario especializado para contar elementos en una secuencia.
+counter = collections.Counter(lista) #Muesta un diccionario donde la clave es cada elemento y como valor las veces que se repite en la lista dicho elmento.
 print(counter)
