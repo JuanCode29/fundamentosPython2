@@ -17,3 +17,17 @@ utils.greeting('Juan')
 # Imprimimos el diccionario:
 
 print(utils.person1)
+
+
+#IMPORTAMOS SOLO PARTES DEL MODULO
+
+#Importamos solo la funcción:
+
+from utils import greeting
+greeting('Pablo')
+
+#Importamos solo el diccionario:
+
+from utils import person1
+
+print(list(filter(lambda persona: persona['age'] == 37, person1)))
