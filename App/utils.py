@@ -15,3 +15,9 @@ person1 = [
     "country": "Norway"
     }
 ]
+
+def obtener_edad(name):
+    for i in person1:
+        if i['name'] == name:
+            return i['ege']
+    return None
