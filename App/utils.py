@@ -19,5 +19,5 @@ person1 = [
 def obtener_edad(name):
     for i in person1:
         if i['name'] == name:
-            return i['ege']
+            return i['age']
     return None
