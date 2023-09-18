@@ -1,5 +1,5 @@
-def func1():
+def func3():
     return 'func3'
 
-def func2():
+def func4():
     return 'func4'
