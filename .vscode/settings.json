@@ -5,6 +5,7 @@
     "python.formatting.provider": "none",
     "python.analysis.extraPaths": [
         "./App",
-        "./modulo_script"
+        "./modulo_script",
+        "./pqt"
     ]
 }
