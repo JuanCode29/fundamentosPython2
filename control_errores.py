@@ -19,3 +19,17 @@ try:
 except ValueError as error:
     print(error)
 print('Hola3')
+
+#UNIFICAMOS LOS ERRORES
+try:
+    print(0/0)
+    assert 5 < 4, 'Tiene que ser menor a 4'
+    x = 20
+    if x > 15:
+        raise ValueError('x no puede ser menor a 15')
+except ZeroDivisionError as error:
+    print(error)
+except AssertionError as error:
+    print(error)
+except ValueError as error:
+    print(error)
