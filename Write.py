@@ -13,3 +13,22 @@ with open('archivo_nuevo.txt', 'a') as archivo:
 
 with open('miArchivo2.txt', 'w') as archivo:
     archivo.write("Este contenido sobrescribirá el contenido anterior.")
+
+# MODO LECTURA Y ESCRITURA
+
+with open('miArchivo.txt', 'r+') as archivo:
+    contenido = archivo.read()# Leer contenido existente.
+    print('Contenido actual del archivo:')
+    print(contenido)
+
+    # Escribir contenido adicional al final del archivo
+    archivo.write("\nEste es contenido adicional.")
+
+    # Regresar al inicio del archivo para leer desde el principio
+
+    archivo.seek(0)
+
+    #Leer el contenido modificado
+    nuevo_contenido = archivo.read()
+    print("Contenido modificado del archivo:")
+    print(nuevo_contenido)
