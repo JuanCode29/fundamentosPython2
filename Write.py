@@ -58,3 +58,19 @@ with open('archivo_nuevo2.txt', 'x+') as archivo:
     contenido = archivo.read()
     print("Contenido del archivo:")
     print(contenido)
+
+# a+: El modo 'a+' en la función open se utiliza para abrir un archivo en modo de agregado y lectura.
+
+# Abrir el archivo en modo 'a+' para agregar y leer
+with open('miArchivo.txt', 'a+') as archivo:
+    # Agregar líneas al final
+    archivo.write("\nLínea 6")
+    archivo.write("\nLínea 7")
+
+    # Regresar al inicio del archivo para leer desde el principio
+    archivo.seek(0)
+
+    # Leer y mostrar el contenido
+    contenido = archivo.read()
+    print("Contenido del archivo:")
+    print(contenido)
