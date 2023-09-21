@@ -32,3 +32,15 @@ with open('miArchivo.txt', 'r+') as archivo:
     nuevo_contenido = archivo.read()
     print("Contenido modificado del archivo:")
     print(nuevo_contenido)
+
+#w+: Me permite no solo escribir, si no tambien leer
+
+with open('Archivo.txt', 'w+') as archivo:
+    # Escribir contenido en el archivo
+    archivo.write('Este es un nuevo archivo2')
+    # Regresar al inicio del archivo para leer desde el principio
+    archivo.seek(0)
+
+    # Leer el contenido recién escrito
+    contenido = archivo.read(6)#Lee solo 6 caracteres. Pra que lo lea todo lo dejamos vacio read()
+    print(contenido)
