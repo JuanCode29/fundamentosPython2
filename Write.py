@@ -44,3 +44,17 @@ with open('Archivo.txt', 'w+') as archivo:
     # Leer el contenido recién escrito
     contenido = archivo.read(6)#Lee solo 6 caracteres. Pra que lo lea todo lo dejamos vacio read()
     print(contenido)
+
+#x+:se utiliza para abrir un archivo en modo de creación exclusiva, lo que significa que se crea un nuevo archivo si no existe, pero genera un error si el archivo ya existe. Además, el modo 'x+' permite tanto la lectura como la escritura en el archivo. 
+
+with open('archivo_nuevo2.txt', 'x+') as archivo:
+    # Escribir contenido en el archivo
+    archivo.write("Este es un nuevo archivo.")
+
+    # Regresar al inicio del archivo para leer desde el principio
+    archivo.seek(0)
+
+    # Leer el contenido recién escrito
+    contenido = archivo.read()
+    print("Contenido del archivo:")
+    print(contenido)
