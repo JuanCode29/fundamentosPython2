@@ -72,3 +72,35 @@ plt.tight_layout()
 
 # Mostrar la figura
 plt.show()
+
+#------------------------------------
+#CREAMOS GRAFICOS LLAMANDO A LA FUNCIÓN .subplots()
+import matplotlib.pyplot as plt
+
+def generate_bar_chart(categorias, valores1, valores2):
+    fig, axes = plt.subplots(nrows=2, ncols=1, figsize=(8, 6))
+    
+    # Subtrama 1: Gráfico de barras en rojo
+    axes[0].bar(categorias, valores1, color='red')
+    axes[0].set_xlabel('Categorías')
+    axes[0].set_ylabel('Valores')
+    axes[0].set_title('Gráfico de Barras 1')
+    
+    # Subtrama 2: Gráfico de barras en azul
+    axes[1].bar(categorias, valores2, color='blue')
+    axes[1].set_xlabel('Categorías')
+    axes[1].set_ylabel('Valores')
+    axes[1].set_title('Gráfico de Barras 2')
+    
+    # Ajustar el espacio entre subtramas
+    plt.tight_layout()
+    
+    # Mostrar la figura con ambas subtramas
+    plt.show()
+
+if __name__ == '__main__':
+    # Datos de ejemplo
+    categorias = ['A', 'B', 'C', 'D', 'E']
+    valores1 = [10, 25, 15, 30, 20]
+    valores2 = [15, 30, 20, 10, 5]
+    generate_bar_chart(categorias, valores1, valores2)
