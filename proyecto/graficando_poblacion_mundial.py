@@ -19,8 +19,6 @@ porcentajes = []
 for dato in datos_continente:
     pais = dato['Country/Territory']
     porcentaje = dato['World Population Percentage']
-    if float(porcentaje) < 1:
-        pais = 'Otros'
     paises.append(pais)
     porcentajes.append(porcentaje)
 
@@ -30,6 +28,3 @@ plt.pie(porcentajes, labels=paises, autopct='%1.1f%%', startangle=140)
 plt.title(f'Distribución de la población en {continente_deseado}')
 plt.axis('equal')
 plt.show()
-
-
-
